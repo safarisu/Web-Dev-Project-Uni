@@ -13,7 +13,7 @@
 			$username = $_POST['username'];
     		$password = $_POST['password'];
 
-    		if(1==1) //$username === 'admin' && $password === 'admin'
+    		if($username === 'admin' && $password === 'admin')
     		{
     			$_SESSION['username'] = $username;
     			header('Location: form.php');
