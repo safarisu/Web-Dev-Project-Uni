@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jakub Dąbrowski Page</title>
+	<link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+	<header>
+    <h1>Jakub Dąbrowski Page</h1>
+	</header>
+	<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="text.html">Tekst</a></li>
+		<li><a href="gallery.html">Galeria</a></li>
+		<li><a href="form.html">Formularz</a></li>
+		<li><a href="calculator.html" class="active">Kalkulator</a></li>
+	</ul>
+	</nav>
+	<main>
+		<div class="entry">
+		<h2>Kalkulator</h2>
+			<div class="content">
+				<div class="kalkulator">
+					<input type="text" id="result" onchange="changeResult()">
+					<div class="przyciski">
+						<input type="button" value="1" onclick="appendNumber('1')">
+						<input type="button" value="2" onclick="appendNumber('2')">
+						<input type="button" value="3" onclick="appendNumber('3')">
+						<input type="button" value="+" onclick="appendOperator('+')">
+						<input type="button" value="4" onclick="appendNumber('4')">
+						<input type="button" value="5" onclick="appendNumber('5')">
+						<input type="button" value="6" onclick="appendNumber('6')">
+						<input type="button" value="-" onclick="appendOperator('-')">
+						<input type="button" value="7" onclick="appendNumber('7')">
+						<input type="button" value="8" onclick="appendNumber('8')">
+						<input type="button" value="9" onclick="appendNumber('9')">
+						<input type="button" value="*" onclick="appendOperator('*')">
+						<input type="button" value="C" onclick="clearResult()">
+						<input type="button" value="0" onclick="appendNumber('0')">
+						<input type="button" value="=" onclick="calculateResult()">
+						<input type="button" value="/" onclick="appendOperator('/')">
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="script.js"></script>
+	</main>
+	<footer>
+	</footer>
+  </body>
+</html>
